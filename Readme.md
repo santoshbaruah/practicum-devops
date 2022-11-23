@@ -243,14 +243,14 @@ resource "aws_db_instance" "postgresql" {
     var.tags
   )
 }
-```
+
 
 ## Steps to run Terraform
-```
+
 terraform init
 terraform plan -var-file=aws.tfvars
 terraform apply -var-file=aws.tfvars -auto-approve
-```
+
 - Once the `terrform apply` completed successfully it will show the `public ipaddress` of the ROR , postgres as `output`
 
 ```
